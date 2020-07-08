@@ -118,6 +118,7 @@ public class Trie implements ITrie {
 
     // gets Hash
     public int hashCode() {
+        hash = hash + numWords * numNodes * this.root.getValue();
         return hash;
     }
 
